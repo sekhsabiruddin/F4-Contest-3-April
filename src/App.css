@@ -1,38 +1,172 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* header is sated here */
+header {
+  background-color: black;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+header .logo span {
+  color: #fff;
+  font-size: 1.3rem;
+}
+header .navbar a {
+  color: #fff;
+  font-size: 1.3rem;
+  margin-left: 1rem;
+  text-decoration: none;
+}
+/* header is end here */
+/* home is start here */
+.home-container {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 3rem;
+  padding: 0 2rem;
+}
+.home-container .box {
+  border: 1px solid black;
+  width: 22%;
+  height: 100%;
+}
+.home-container .box img {
+  width: 100%;
+  height: 270px;
+}
+.home-container .box p {
+  margin-top: 0.5rem;
+  margin-top: 0.5rem;
+  padding-left: 10px;
+}
+.home-container .box button {
+  background: black;
+  width: 100%;
+  color: #fff;
+  padding: 0.5rem 0rem;
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+  cursor: pointer;
+}
+.home-container .box button:active {
+  background-color: rgb(219, 6, 6);
+}
+/* home end here */
+
+/* card start here */
+.card-container {
+  background-color: #cccccc30;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  /* border: 3px solid green; */
+}
+.card-container .card-left-side {
+  /* border: 3px solid rgb(78, 33, 1); */
+  width: 65%;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 4px;
+}
+.card-container .card-left-side .left-box {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  display: flex;
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  justify-content: space-between;
+}
+.card-container .card-left-side img {
+  width: 100px;
+  height: 90px;
+}
+.card-container .title {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.card-container .card-left-content {
+  margin-left: 1rem;
+  margin-left: 1rem;
+  width: 60%;
+}
+.card-container .card-right-side {
+  /* border: 3px solid hotpink; */
+  width: 35%;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  background-color: #fff;
+}
+.card-container .card-right-side h3 {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+}
+.card-container .card-right-side .itme-box {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+  font-size: 1.2rem;
+}
+.checkout-btn {
+  margin-top: 1rem;
+  text-align: center;
+  width: 100%;
+  padding: 0.7rem 1rem;
+  border: 1px solid;
+  border-radius: 20px;
+  background: #16d716;
+  color: #fff;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+.checkbox-line {
+  margin: 1rem 0px;
+}
+.total-amount {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+  font-size: 1.2rem;
+}
+.delete-icon {
+  color: red;
+  font-size: 30px;
+}
+
+/* card right side */
+/* loading amination */
+.loading {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
 }
-
-.App-link {
-  color: #61dafb;
+.card-btn {
+  position: relative;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.icon-div {
+  display: inline-block;
+  background: #fff;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  position: absolute;
+  left: 92%;
+  top: -40%;
+}
+.card-icon {
+  position: absolute;
+  color: red;
+  left: 26%;
+  font-size: 1.2rem;
+  font-weight: bolder;
 }
